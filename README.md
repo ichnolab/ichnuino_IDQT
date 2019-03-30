@@ -2,18 +2,24 @@
 
 ![logo](https://scontent-mxp1-1.cdninstagram.com/vp/5a0d69fc3391eb50d7b0182028333320/5D4D234C/t51.2885-19/s150x150/52319422_359091484685613_2091248657645961216_n.jpg?_nc_ht=scontent-mxp1-1.cdninstagram.com)
 
-#  :iphone::mag: ***IDQT PROTOTYPE V 0.1.2***:octocat: 
+#  :iphone::mag: ***IDQT V 1.0***:octocat: 
+## **Iphone Display Quality Tester**
 
-## **Device purpouse:** 
+### **Device purpouse:** 
 Automatic iphone OEM & A/M display white color quality classification on 5 levels 
 
-## **How it works:**
-The device detects the brightness and color temperature of the iphone white screen, classifying the display quality on a five-level scale (A/AA/AAA/AAA+/TOP-Q) and showing live Kelvin and cd/m2 readings...plus a very cute dynamic emoji with comment! All of this stuffed togheter with some annoying beeps :) 
+### **How it works:**
+The device detects the brightness and color temperature of the iphone white screen, classifying the display quality on a five-level scale (A/AA/AAA/AAA+/TOP-Q) and showing Kelvin and cd/m2 readings...plus a very cute dynamic emoji with comment! 
+All of this stuffed togheter with some annoying beeps :) 
 
-## **sensor specs:** 
-RGBC w/IR-filter; dynamic range 3.800.000:1 w/adjustable timing
+### **- instructions:** 
+1. remove any protective glass (if present);
+1. set  brightness at 100% and disable night shift (if enabled); 
+1. open phone app at the dialer screen; 
+1. put the sensor on a white sector of the screen (it must touch the glass);
+1. enjoy the results;
 
-## **models supported:**
+### **models supported:**
 - [x] iphone 5/5S/5C/SE *(max lev. AAA (also if OEM)*
 - [x] iphone 6/6P
 - [x] iphone 6S/6SP
@@ -22,17 +28,57 @@ RGBC w/IR-filter; dynamic range 3.800.000:1 w/adjustable timing
 - [ ] iphone XR     *(still not supported)*
 - [ ] iphone X/XS/XSM *(still not supported)*
 
-## **hardware:** 
-Arduino UNO, Adafruit OLED 0,91" 128x64, Adafruit tcs34725, piezo buzzer, 100ohm resistor, Sunfounder housing, wires;
+### **hardware:** 
 
-## **software:** 
-ichnuinoidqt_0.1.2/beta *(C++)*
+ **sensor specs:**
+RGBC w/IR filter; dynamic range 3.800.000:1 w/adjustable timing; 
 
-## **How the code works:** 
-- 5 levels brightness **(L)**:  
+- **Components**
+  - ARDUINO_UNO
+  - OLED_128x64_I2C
+  - TCS34725_RGB_SENSOR
+  - PIEZO_BUZZER
+  - 100OHM_RESISTOR
+
+ **Wiring:**
+ 
+- *Sensor*
+  - *TCS34725*: LED --> *ARDUINO*: GND
+  - *TCS34725*: INT --> (*NOT USED*)
+  - *TCS34725*: SDA --> *ARDUINO*: SDA
+  - *TCS34725*: SLC --> *ARDUINO*: SLC
+  - *TCS34725*: 3V3 --> (*NOT USED*)
+  - *TCS34725*: GND --> *ARDUINO*: GND
+  - *TCS34725*: VIN --> *ARDUINO*: 5V
+
+- *Display*
+  - *OLED_128x64*: GND --> *ARDUINO*: GND 
+  - *OLED_128x64*: VCC --> *ARDUINO*: 5V
+  - *OLED_128x64*: SLC --> *ARDUINO*: SLC
+  - *OLED_128x64*: SDA --> *ARDUINO*: SDA
+
+- *Buzzer*
+  - *BUZZER*: + -> *ARDUINO*: PIN 3
+  - *BUZZER*: - --> *100OHM RESISTOR* --> *ARDUINO*: GND
+  
+
+### **software:** 
+ichnuinoidqt_1.0 *(C++)*
+
+### **How the code works:** 
+
+- **sensor settings:**
+  - custom init values (int time = 700ms, gain = 1x)
+  - colorTemp = tcs.calculateColorTemperature_dn40(r, g, b, c);
+  - lux = tcs.calculateLux(r, g, b);
+  
+  
+  
+- **5 levels brightness (L)**:  
   - *300/449 - 450/549 - 550/849 - 850/1049 - 1050/1850*
-- 5 levels color temp **(K)**: 
+- **5 levels color temp (K)**: 
   - *8500/7501 - 7500/6501 - 6500/6001 - 6000/5501 - 5500/5000*
+
 
 - **grade A:**
   - L1 K1/K2/K3/K4/K5 *or*
@@ -53,46 +99,16 @@ K4 L5;
   - (better the quality, faster the beeps)
 
 
-## **Wiring:**
-
-- ***Components***
-  - ARDUINO
-  - OLED_128x64
-  - TCS34725
-  - BUZZER
-  - 100OHM_RESISTOR 
-
-- ***Sensor***
-  - *TCS34725*: LED --> *ARDUINO*: GND
-  - *TCS34725*: INT --> (*NOT USED*)
-  - *TCS34725*: SDA --> *ARDUINO*: SDA
-  - *TCS34725*: SLC --> *ARDUINO*: SLC
-  - *TCS34725*: 3V3 --> (*NOT USED*)
-  - *TCS34725*: GND --> *ARDUINO*: GND
-  - *TCS34725*: VIN --> *ARDUINO*: 5V
-
-- ***Display***
-  - *OLED_128x64*: GND --> *ARDUINO*: GND 
-  - *OLED_128x64*: VCC --> *ARDUINO*: 5V
-  - *OLED_128x64*: SLC --> *ARDUINO*: SLC
-  - *OLED_128x64*: SDA --> *ARDUINO*: SDA
-
-- ***Buzzer***
-  - *BUZZER*: + -> *ARDUINO*: PIN 3
-  - *BUZZER*: - --> *100OHM RESISTOR* --> *ARDUINO*: GND
 
 
-## **- instructions:** 
-remove any protective glass (if present); set 100% brightness and disable night filter (if enabled); open phone app at the dialer screen; put the sensor on a white sector of the screen (it must touch the glass); enjoy the results;
-
-## **Note:** 
+### **Notes:** 
 The results are for reference only. This is a spare time project, made in few weekend just for fun, don't take it seriously. Also if the testing engine and the levels classification dababase are the result of over a hundred values reading on OEM and A/M iphone displays, further research is still in progress.
 
-### *Made in Italy* :it:
-*by* [**ichnolab**](https://pages.github.com/ichnolab)
+#### *Made in Italy* :it:
+*by* @ichnolab
 
 - *website* 
-  - [www.ichnolab.it](https://ichnolab.it/)
+  - www.ichnolab.it
 - *socials*
   - [instagram](https://www.instagram.com/ichnolab/)
   - [facebook](https://www.facebook.com/ichnolab)
