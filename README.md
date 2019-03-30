@@ -96,7 +96,7 @@ K4 L5;
   - L5 K5;
 - **(SLEEP if out of range)**
 - **Buzzer:** 
-  - (better the quality, faster the beeps)
+  - (better the quality, more the beeps)
 
 
 
