@@ -12,7 +12,7 @@ Automatic iphone OEM & A/M display white color quality classification on 5 level
 The device detects the brightness and color temperature of the iphone white screen, classifying the display quality on a five-level scale (A/AA/AAA/AAA+/TOP-Q) and showing Kelvin and cd/m2 readings...plus a very cute dynamic emoji with comment! 
 All of this stuffed togheter with some annoying beeps :) 
 
-### **- instructions:** 
+### **Instructions:** 
 1. remove any protective glass (if present);
 1. set  brightness at 100% and disable night shift (if enabled); 
 1. open phone app at the dialer screen; 
@@ -28,9 +28,9 @@ All of this stuffed togheter with some annoying beeps :)
 - [ ] iphone XR     *(still not supported)*
 - [ ] iphone X/XS/XSM *(still not supported)*
 
-### **hardware:** 
+### **Hardware:** 
 
- **sensor specs:**
+ **Sensor specs:**
 RGBC w/IR filter; dynamic range 3.800.000:1 w/adjustable timing; 
 
 - **Components**
@@ -62,7 +62,7 @@ RGBC w/IR filter; dynamic range 3.800.000:1 w/adjustable timing;
   - *BUZZER*: - --> *100OHM RESISTOR* --> *ARDUINO*: GND
   
 
-### **software:** 
+### **Software:** 
 ichnuinoidqt_1.0 *(C++)*
 
 ### **How the code works:** 
@@ -103,6 +103,7 @@ K4 L5;
 
 ### **Notes:** 
 The results are for reference only. This is a spare time project, made in few weekend just for fun, don't take it seriously. Also if the testing engine and the levels classification dababase are the result of over a hundred values reading on OEM and A/M iphone displays, further research is still in progress.
+
 
 #### *Made in Italy* :it:
 *by* @ichnolab
