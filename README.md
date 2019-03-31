@@ -6,11 +6,22 @@
 ## **Iphone Display Quality Tester**
 
 ### **Device purpose:** 
-Automatic iphone OEM & A/M display white color quality classification on 5 levels 
+Automatic iphone OEM & A/M display white color quality classification on 5-levels scale
 
 ### **How it works:**
-The device detects the brightness and color temperature of the iphone white screen, classifying the display quality on a five-level scale (A/AA/AAA/AAA+/TOP-Q) and showing Kelvin and cd/m2 readings...plus a very cute dynamic emoji with comment! 
+The device detects the brightness and color temperature of the iphone white screen, classifying the display quality on a five-levels scale and showing Kelvin and cd/m2 readings...plus a very cute dynamic emoji with comment! 
 All of this stuffed togheter with some annoying beeps :) 
+
+### **Features:**
+- real time 5lev-scale Quality classification (A/AA/AAA/AAA+/TOP_Q)
+- Realtime Kelvin&cd/m2 readings
+- Handmade dynamic emoji w/balloon&comment (different for each lev)
+- Buzzer (increasing beeps when higher quality)
+- TestingEngineDB rev_2.1 (>100 OEM&A/M parts tested)
+- Serial data logging of RGBC readings (COMport)
+- Emergency torch (unplug LED pin from sensor to turn/ON, replug to turn/OFF, DON'T USE WHEN TESTING)
+- Adjustable flexible arm with sensor (don't need to push sensor on glass w/finger, just adjust arm's eight)
+- ...already said about the very cute emoji?? yep so that's all, folks!
 
 ### **Instructions:** 
 1. remove any protective glass (if present);
@@ -30,6 +41,9 @@ All of this stuffed togheter with some annoying beeps :)
 
 ### **Hardware:** 
 
+**Power specs**
+DC-IN: 5V/0.5A USB/B_port (EXT power port not supported)
+    
  **Sensor specs:**
 RGBC w/IR filter; dynamic range 3.800.000:1 w/adjustable timing; 
 
@@ -73,7 +87,6 @@ ichnuinoidqt_1.0 *(C++)*
   - lux = tcs.calculateLux(r, g, b);
   
   
-  
 - **5 levels brightness (L)**:  
   - *300/449 - 450/549 - 550/849 - 850/1049 - 1050/1850*
 - **5 levels color temp (K)**: 
@@ -94,11 +107,8 @@ K3 L4/L5;
 K4 L5;
 - **grade TOP_Q:**
   - L5 K5;
-- **(SLEEP if out of range)**
-- **Buzzer:** 
-  - (better the quality, more the beeps)
-
-
+- **(SLEEP)**
+  - (if out of range)
 
 
 ### **Notes:** 
