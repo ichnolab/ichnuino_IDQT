@@ -35,14 +35,14 @@
  int kAvg = 7000;
  int kGud = 6500;
  int kOem = 6000;
- int kOvr = 5000;
+ int kOvr = 4750;
  //brightness levels 
  int lMin = 300;  
  int lBad = 400;
  int lAvg = 500;
  int lGud = 750;
  int lOem = 950;
- int lOvr = 1750;
+ int lOvr = 1950;
  
  // Declaration for an SSD1306 display connected to I2C (SDA, SCL pins)
  #define OLED_RESET     4 // Reset pin # (or -1 if sharing Arduino reset pin)
