@@ -1,9 +1,10 @@
-
-
-![logo](https://scontent-mxp1-1.cdninstagram.com/vp/5a0d69fc3391eb50d7b0182028333320/5D4D234C/t51.2885-19/s150x150/52319422_359091484685613_2091248657645961216_n.jpg?_nc_ht=scontent-mxp1-1.cdninstagram.com)
-
 #  :iphone::mag: ***IDQT V 1.0***:octocat: 
 ## **Iphone Display Quality Tester**
+
+<img src="https://scontent-mxp1-1.cdninstagram.com/vp/6cf9d5bb728e1ff2b5643d2e2bf81656/5D32CF72/t51.2885-15/e35/56374470_125597435198751_264366501058092392_n.jpg?_nc_ht=scontent-mxp1-1.cdninstagram.com" width="300" height="300" />
+
+<img src="https://scontent-mxp1-1.cdninstagram.com/vp/49bb590e6baedac6385599926923ebde/5D37B90D/t51.2885-15/e35/54247601_329470101088918_1614910946622328742_n.jpg?_nc_ht=scontent-mxp1-1.cdninstagram.com" width="300" height="300" />
+
 
 ### **Device purpose:** 
 Automatic iphone OEM & A/M display white color quality classification on 5-levels scale
@@ -126,5 +127,9 @@ The results are for reference only. This is a spare time project, made in few we
   - [twitter](https://twitter.com/ichnolab)
 
 
-- Picture of V_0.1.2
-![V_0-1-2](https://scontent-mxp1-1.cdninstagram.com/vp/35754da099cce1d603ed31845ef3fd30/5D4477C6/t51.2885-15/e35/53830487_2019080171730101_4242390874289956636_n.jpg?_nc_ht=scontent-mxp1-1.cdninstagram.com)
+<img src="https://scontent-mxp1-1.cdninstagram.com/vp/5c130981eb8c1741a824d579f934b38a/5D380CC9/t51.2885-15/e35/55758150_369565443658852_4937224586675128474_n.jpg?_nc_ht=scontent-mxp1-1.cdninstagram.com" width="300" height="300" />
+
+<img src="https://scontent-mxp1-1.cdninstagram.com/vp/5e053f664d1c2718ca9374a163da8b53/5D4D8312/t51.2885-15/e35/52829592_2590464110968167_1702059385461725751_n.jpg?_nc_ht=scontent-mxp1-1.cdninstagram.com" width="300" height="300" />
+
+
+
