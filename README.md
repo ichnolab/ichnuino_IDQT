@@ -5,7 +5,7 @@
 #  :iphone::mag: ***IDQT V 1.0***:octocat: 
 ## **Iphone Display Quality Tester**
 
-### **Device purpouse:** 
+### **Device purpose:** 
 Automatic iphone OEM & A/M display white color quality classification on 5 levels 
 
 ### **How it works:**
