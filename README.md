@@ -5,7 +5,7 @@
 
 <img src="https://scontent-mxp1-1.cdninstagram.com/vp/49bb590e6baedac6385599926923ebde/5D37B90D/t51.2885-15/e35/54247601_329470101088918_1614910946622328742_n.jpg?_nc_ht=scontent-mxp1-1.cdninstagram.com" width="300" height="300" />
 
-#### *youtube link to example video:*  **https://youtu.be/L-VOf1LVC_Q**
+#### *youtube link to demo video:*  **https://youtu.be/L-VOf1LVC_Q**
 
 ### **Device purpose:** 
 Automatic iphone OEM & A/M display white color quality classification on 5-levels scale
