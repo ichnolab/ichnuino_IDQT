@@ -2,6 +2,9 @@
 
 ## The following are some examples extracted from the testing readings used to build the Quality Levels Database ver_2.1.
 
+### **(important note: these brightness values are raw hex readings from the sensor, and are exactly doulbe as real cd/m2 values;              since QL_DB_2.2 this is fixed, in order to show real cd/m2 readings; this file will be updated with new readings ASAP)
+
+
 The full research involved more than 100 iphone LCD-display parts (iph5 to iph8+ models), including: apple OEM new/used/very-used),
 varius aftermarket brands (high and low prices and claimed quality), refurbished display-assemblies with Sharpe/LGe LCD and BL-damaged
 or burned yellowy borded parts.
