@@ -1,9 +1,7 @@
-#  :iphone::mag: ***IDQT V 1.0***:octocat: 
+#  :iphone::mag: ***IDQT V 1.1***:octocat: 
 ## **Iphone Display Quality Tester**
 
 <img src="https://scontent-mxp1-1.cdninstagram.com/vp/6cf9d5bb728e1ff2b5643d2e2bf81656/5D32CF72/t51.2885-15/e35/56374470_125597435198751_264366501058092392_n.jpg?_nc_ht=scontent-mxp1-1.cdninstagram.com" width="300" height="300" />
-
-<img src="https://scontent-mxp1-1.cdninstagram.com/vp/49bb590e6baedac6385599926923ebde/5D37B90D/t51.2885-15/e35/54247601_329470101088918_1614910946622328742_n.jpg?_nc_ht=scontent-mxp1-1.cdninstagram.com" width="300" height="300" />
 
 #### *youtube link to demo video:*  **https://youtu.be/L-VOf1LVC_Q**
 
@@ -16,10 +14,10 @@ All of this stuffed togheter with some annoying beeps :)
 
 ### **Features:**
 - real time 5lev-scale Quality classification (A/AA/AAA/AAA+/TOP_Q)
-- Realtime Kelvin&cd/m2 readings
-- Handmade dynamic emoji w/balloon&comment (different for each lev)
+- Realtime Kelvin&cd/m2 readings with 3.8M: dynamic range
+- Handmade emoji set w/balloon&comment (different for each lev)
 - Buzzer (increasing beeps when higher quality)
-- TestingEngineDB rev_2.1 (>100 OEM&A/M parts tested)
+- TestingEngineDB rev_2.2 (>150 OEM&A/M parts tested, real cd/m2 readings)
 - Serial data logging of RGBC readings (COMport)
 - Emergency torch (unplug LED pin from sensor to turn/ON, replug to turn/OFF, DON'T USE WHEN TESTING)
 - Adjustable flexible arm with sensor (don't need to push sensor on glass w/finger, just adjust arm's eight)
@@ -79,18 +77,18 @@ RGBC w/IR filter; dynamic range 3.800.000:1 w/adjustable timing;
   
 
 ### **Software:** 
-ichnuinoidqt_1.0 *(C++)*
+ichnuinoidqt_1.1 (update 040819)
 
 ### **How the code works:** 
 
 - **sensor settings:**
   - custom init values (int time = 700ms, gain = 1x)
   - colorTemp = tcs.calculateColorTemperature_dn40(r, g, b, c);
-  - lux = tcs.calculateLux(r, g, b);
+  - lux = (tcs.calculateLux(r, g, b) /2);
   
   
 - **5 levels brightness (L)**:  
-  - *300/399 - 400/499 - 500/749 - 750/949 - 950/1950*
+  - *150/199 - 200/249 - 250/374 - 375/474 - 475/900*
 - **5 levels color temp (K)**: 
   - *8500/7501 - 7500/7001 - 7000/6501 - 6500/6001 - 6000/4750*
 
