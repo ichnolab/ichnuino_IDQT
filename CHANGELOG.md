@@ -1,23 +1,25 @@
 # **VERSION HISTORY**
 
 
-#### **V_2.0** (work in progress / status: early_alpha)
+#### **V_2.0** (work in progress / status: early_alpha / release date:  N/A)
 
 *scheduled features (pinned if confirmed)*
-- [x] small size HW, built on arduino nano;
+
+- [ ] small size HW, built on arduino nano;
 - [x] dedicated professional brightness sensor, with 600M:1 dynamic range;
 - [ ] iphone X/XS/XSM OLED support (OEM+A/M);
-- [ ] new REF_DB with more readings from OEM and A/M parts;
-- [ ] new Testing Engine, for more accurate classification;
-- [ ] general software improvements;
+- [x] new REF_DB with more readings from OEM and A/M parts;
+- [x] new Testing Engine, for more accurate classification;
+- [x] general software improvements;
 - [ ] ...something else;
 
 
 
 #### **V_1.1** (03.31.2019)
 
-  - fixed unrealistic brightness values, that twice as real;
-    (now the readings are real cd/m2 values w/dynamic range 3.8M:1)
+  - fixed unrealistic brightness values, that twice as real; now the readings are real cd/m2 values;
+    
+    (Example: iphone 7 has max brigthness of ~600 cd/m2, as Apple OEM specs)
 
 
 
