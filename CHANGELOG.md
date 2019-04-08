@@ -15,7 +15,7 @@
 
 
 
-#### **V_1.1** (03.31.2019)
+#### **V_1.1** (04.08.2019)
 
   - fixed unrealistic brightness values, that twice as real; now the readings are real cd/m2 values;
     
